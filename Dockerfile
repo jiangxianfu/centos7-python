@@ -9,4 +9,4 @@ RUN set -ex \
     && sed -i "s#/usr/bin/python#/usr/bin/python2.7.5#" /usr/bin/yum \
     && sed -i "s#/usr/bin/python#/usr/bin/python2.7.5#" /usr/libexec/urlgrabber-ext-down
 RUN cd /tmp && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
-RUN yum -y deltarpm && yum clean all && rm -rf /tmp/*
+RUN yum -y install deltarpm && yum clean all && rm -rf /tmp/*
