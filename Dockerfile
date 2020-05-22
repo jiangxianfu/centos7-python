@@ -11,4 +11,4 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py \
 RUN set -ex \
     && sed -i "s#/usr/bin/python#/usr/bin/python2.7.5#" /usr/bin/yum \
     && sed -i "s#/usr/bin/python#/usr/bin/python2.7.5#" /usr/libexec/urlgrabber-ext-down
-RUN yum install -y deltarpm && yum clean all
+RUN yum clean all && rm -rf /tmp/*
