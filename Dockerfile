@@ -1,7 +1,5 @@
 FROM centos:7
 LABEL author="steven"
-RUN yum groups mark install "Development Tools"
-RUN yum groups mark convert "Development Tools"
 RUN yum groupinstall -y "Development tools"
 RUN yum -y install tar gcc zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel
 RUN cd /tmp && curl https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz -o Python-2.7.18.tgz \
