@@ -1,4 +1,4 @@
-# centos7 不同python版本的docker
+# centos7 下不同python版本的docker
 
  ## centos7-python27
 
