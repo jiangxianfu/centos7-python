@@ -10,4 +10,4 @@ RUN set -ex \
     && sed -i "s#/usr/bin/python#/usr/bin/python2.7.5#" /usr/libexec/urlgrabber-ext-down
 RUN cd /tmp && curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py && python get-pip.py
 RUN yum clean all && rm -rf /tmp/*
-RUN python -V && pip list
+RUN python -V && python -m pip list
