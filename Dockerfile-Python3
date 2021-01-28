@@ -2,3 +2,4 @@ FROM centos:7
 LABEL author="steven"
 RUN yum update -y && yum install -y python3
 RUN yum clean all && rm -rf /tmp/*
+RUN python3 -V && python3 -m pip list
