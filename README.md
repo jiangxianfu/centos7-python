@@ -9,9 +9,9 @@
  #build
  docker build -f Dockerfile-Python27 -t centos7-python27 .
  #tag
- docker tag centos7-python27:latest jiangxianfu/centos7-python27:latest
+ docker tag centos7-python:2.7 jiangxianfu/centos7-python:2.7
  #push
- docker push jiangxianfu/centos7-python27:latest
+ docker push jiangxianfu/centos7-python:2.7
  ```
  
   ## centos7-python3
@@ -23,7 +23,7 @@
  #build
  docker build -f Dockerfile-Python3 -t centos7-python3 .
  #tag
- docker tag centos7-python3:latest jiangxianfu/centos7-python3:latest
+ docker tag centos7-python:latest jiangxianfu/centos7-python:latest
  #push
- docker push jiangxianfu/centos7-python3:latest
+ docker push jiangxianfu/centos7-python:latest
  ```
